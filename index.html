@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Video Sonra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Step 1: Mood Selection -->
+        <div id="mood-step" class="step active">
+            <h1>2 Video Sonra</h1>
+            <p class="subtitle">Şu an nasıl hissediyorsun?</p>
+            <div class="mood-options">
+                <button class="mood-btn" data-mood="yorgun">Yorgun</button>
+                <button class="mood-btn" data-mood="bunalmis">Bunalmış</button>
+                <button class="mood-btn" data-mood="umutsuz">Umutsuz</button>
+                <button class="mood-btn" data-mood="bos">Boş</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Video Watching -->
+        <div id="video-step" class="step">
+            <h2>2 video izle</h2>
+            <div class="video-counter">
+                <span id="video-count">0</span> / 2
+            </div>
+            <button id="watch-video-btn" class="primary-btn">Video İzledim</button>
+        </div>
+
+        <!-- Step 3: Energy Level -->
+        <div id="energy-step" class="step">
+            <h2>Şu an enerjin 0–10 arası kaç?</h2>
+            <div class="energy-input">
+                <input type="range" id="energy-slider" min="0" max="10" value="5" step="1">
+                <div class="energy-value">
+                    <span id="energy-display">5</span>
+                </div>
+            </div>
+            <button id="submit-energy-btn" class="primary-btn">Devam Et</button>
+        </div>
+
+        <!-- Step 4: Suggestion -->
+        <div id="suggestion-step" class="step">
+            <div class="suggestion-content">
+                <p id="suggestion-text"></p>
+            </div>
+            <button id="restart-btn" class="secondary-btn">Baştan Başla</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
